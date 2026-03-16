@@ -1,0 +1,50 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install vsce
+        run: npm install -g @vscode/vsce
+
+      - name: Extract version from tag
+        id: version
+        run: echo "version=${GITHUB_REF_NAME#v}" >> "$GITHUB_OUTPUT"
+
+      - name: Sync version to package.json
+        run: |
+          cd vscode
+          npm pkg set version="${{ steps.version.outputs.version }}"
+
+      - name: Package vsix
+        run: |
+          cd vscode
+          vsce package -o "../sakya-theme-${{ steps.version.outputs.version }}.vsix"
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: "sakya-theme-*.vsix"
+          generate_release_notes: true
+          body: |
+            ## Sakya Theme ${{ github.ref_name }}
+
+            ### Install
+            1. Download the `.vsix` file below
+            2. In VS Code: `Ctrl+Shift+P` → `Extensions: Install from VSIX...`
+            3. Select the downloaded file
+            4. Choose **Sakya Dorje** (dark) or **Sakya Karpo** (light) from Color Theme

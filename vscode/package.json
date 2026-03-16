@@ -4,11 +4,26 @@
   "description": "Color theme inspired by Sakya Monastery thangka paintings and Tibetan Buddhist art",
   "version": "0.1.0",
   "publisher": "xuanlee",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/XuanLee-HEALER/sakya-theme"
+  },
   "engines": {
     "vscode": "^1.80.0"
   },
   "categories": [
     "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "color-theme",
+    "tibetan",
+    "buddhist",
+    "sakya",
+    "thangka",
+    "dark-theme",
+    "light-theme"
   ],
   "contributes": {
     "themes": [
