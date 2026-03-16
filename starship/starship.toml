@@ -1,28 +1,21 @@
 # ╔══════════════════════════════════════════════════════════════════╗
 # ║  Sakya Theme — Starship Prompt                                 ║
-# ║  Inspired by Sakya Monastery thangka paintings                 ║
+# ║  离四贪 · Parting from the Four Attachments                     ║
 # ║                                                                ║
-# ║  Usage:                                                        ║
-# ║    Copy this file to ~/.config/starship.toml                   ║
-# ║    or set STARSHIP_CONFIG to point here.                       ║
+# ║  如黑唐卡——深色背景上，只有最必要的信息以金线显现。               ║
 # ║                                                                ║
-# ║  Switch variant by changing `palette = "sakya_dorje"`          ║
-# ║  to `palette = "sakya_karpo"`                                  ║
+# ║  Switch variant: palette = "sakya_dorje" / "sakya_karpo"       ║
 # ╚══════════════════════════════════════════════════════════════════╝
 
 command_timeout = 1000
 "$schema" = 'https://starship.rs/config-schema.json'
 
+palette = 'sakya_dorje'
+
 format = """
-[](red)\
-$os\
-$username\
-[](bg:peach fg:red)\
 $directory\
-[](bg:yellow fg:peach)\
 $git_branch\
 $git_status\
-[](fg:yellow bg:green)\
 $c\
 $rust\
 $golang\
@@ -32,57 +25,21 @@ $java\
 $kotlin\
 $haskell\
 $python\
-[](fg:green bg:sapphire)\
 $conda\
-[](fg:sapphire bg:lavender)\
-$time\
-[ ](fg:lavender)\
+$docker_context\
 $cmd_duration\
 $line_break\
 $character"""
 
-palette = 'sakya_dorje'
-
-# ── OS ──
-[os]
-disabled = false
-style = "bg:red fg:crust"
-
-[os.symbols]
-Windows = ""
-Ubuntu = "󰕈"
-SUSE = ""
-Raspbian = "󰐿"
-Mint = "󰣭"
-Macos = "󰀵"
-Manjaro = ""
-Linux = "󰌽"
-Gentoo = "󰣨"
-Fedora = "󰣛"
-Alpine = ""
-Amazon = ""
-Android = ""
-AOSC = ""
-Arch = "󰣇"
-Artix = "󰣇"
-CentOS = ""
-Debian = "󰣚"
-Redhat = "󱄛"
-RedHatEnterprise = "󱄛"
-
-# ── Username ──
-[username]
-show_always = true
-style_user = "bg:red fg:crust"
-style_root = "bg:red fg:crust"
-format = '[ $user]($style)'
-
-# ── Directory ──
+# ── Directory — 金 (Gser) ──
+# 你在哪里，最重要，唯一用金
 [directory]
-style = "bg:peach fg:crust"
-format = "[ $path ]($style)"
+style = "bold peach"
+format = "[$path]($style)[$read_only]($read_only_style) "
 truncation_length = 3
 truncation_symbol = "…/"
+read_only = " "
+read_only_style = "red"
 
 [directory.substitutions]
 "Documents" = "󰈙 "
@@ -91,104 +48,119 @@ truncation_symbol = "…/"
 "Pictures" = " "
 "Developer" = "󰲋 "
 
-# ── Git ──
+# ── Git branch — 石青蓝 (Ngonpo) ──
 [git_branch]
-symbol = ""
-style = "bg:yellow"
-format = '[[ $symbol $branch ](fg:crust bg:yellow)]($style)'
+symbol = " "
+style = "sky"
+format = "[·](subtext0) [$symbol$branch(:$remote_branch)]($style) "
 
+# ── Git status — 石绿干净 / 朱砂脏 ──
 [git_status]
-style = "bg:yellow"
-format = '[[($all_status$ahead_behind )](fg:crust bg:yellow)]($style)'
+style = "teal"
+format = "[$all_status$ahead_behind]($style)"
+conflicted = "[=$count](bold red) "
+ahead = "[⇡$count](teal) "
+behind = "[⇣$count](maroon) "
+diverged = "[⇕⇡$ahead_count⇣$behind_count](maroon) "
+untracked = "[?$count](subtext0) "
+stashed = "[\\$$count](subtext1) "
+modified = "[!$count](red) "
+staged = "[+$count](teal) "
+renamed = "[»$count](sky) "
+deleted = "[✘$count](red) "
 
-# ── Languages ──
+# ── Languages — 三级文字 (Dul-ba)，退让 ──
 [nodejs]
-symbol = ""
-style = "bg:green"
-format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+symbol = " "
+style = "subtext0"
+format = "[·](subtext0) [$symbol$version]($style) "
 
 [c]
 symbol = " "
-style = "bg:green"
-format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+style = "subtext0"
+format = "[·](subtext0) [$symbol$version]($style) "
 
 [rust]
-symbol = ""
-style = "bg:green"
-format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+symbol = " "
+style = "subtext0"
+format = "[·](subtext0) [$symbol$version]($style) "
 
 [golang]
-symbol = ""
-style = "bg:green"
-format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+symbol = " "
+style = "subtext0"
+format = "[·](subtext0) [$symbol$version]($style) "
 
 [php]
-symbol = ""
-style = "bg:green"
-format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+symbol = " "
+style = "subtext0"
+format = "[·](subtext0) [$symbol$version]($style) "
 
 [java]
 symbol = " "
-style = "bg:green"
-format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+style = "subtext0"
+format = "[·](subtext0) [$symbol$version]($style) "
 
 [kotlin]
-symbol = ""
-style = "bg:green"
-format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+symbol = " "
+style = "subtext0"
+format = "[·](subtext0) [$symbol$version]($style) "
 
 [haskell]
-symbol = ""
-style = "bg:green"
-format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+symbol = " "
+style = "subtext0"
+format = "[·](subtext0) [$symbol$version]($style) "
 
 [python]
-symbol = ""
-style = "bg:green"
-format = '[[ $symbol( $version)(\(#$virtualenv\)) ](fg:crust bg:green)]($style)'
+symbol = " "
+style = "subtext0"
+format = "[·](subtext0) [$symbol$version(\\($virtualenv\\))]($style) "
 
 # ── Conda ──
 [conda]
-symbol = "  "
-style = "fg:crust bg:sapphire"
-format = '[$symbol$environment ]($style)'
+symbol = " "
+style = "subtext0"
+format = "[·](subtext0) [$symbol$environment]($style) "
 ignore_base = false
 
-# ── Docker ──
+# ── Docker — 青金石 (Mutsmen) ──
 [docker_context]
-symbol = ""
-style = "bg:sapphire"
-format = '[[ $symbol( $context) ](fg:crust bg:sapphire)]($style)'
+symbol = " "
+style = "sapphire"
+format = "[·](subtext0) [$symbol$context]($style) "
 
-# ── Time ──
-[time]
-disabled = false
-time_format = "%R"
-style = "bg:lavender"
-format = '[[  $time ](fg:crust bg:lavender)]($style)'
+# ── Command duration — 铅丹橙，>= 1s 显示 ──
+[cmd_duration]
+style = "maroon"
+min_time = 1_000
+format = " [·](subtext0) [$duration]($style)"
+show_milliseconds = false
+show_notifications = true
+min_time_to_notify = 45000
 
 # ── Line break ──
 [line_break]
-disabled = true
+disabled = false
 
-# ── Character ──
+# ── Character — 金线收尾 ──
 [character]
 disabled = false
-success_symbol = '[❯](bold fg:green)'
-error_symbol = '[❯](bold fg:red)'
-vimcmd_symbol = '[❮](bold fg:green)'
-vimcmd_replace_one_symbol = '[❮](bold fg:lavender)'
-vimcmd_replace_symbol = '[❮](bold fg:lavender)'
-vimcmd_visual_symbol = '[❮](bold fg:yellow)'
+success_symbol = "[❯](bold peach)"
+error_symbol = "[❯](bold red)"
+vimcmd_symbol = "[❮](bold teal)"
+vimcmd_replace_one_symbol = "[❮](bold pink)"
+vimcmd_replace_symbol = "[❮](bold pink)"
+vimcmd_visual_symbol = "[❮](bold yellow)"
 
-# ── Command duration ──
-[cmd_duration]
-show_milliseconds = true
-format = " in $duration "
-style = "bg:lavender"
-disabled = false
-show_notifications = true
-min_time_to_notify = 45000
+# ── Time — 不显示，保持简净 ──
+[time]
+disabled = true
+
+# ── OS / Username — 不显示，去执着 ──
+[os]
+disabled = true
+
+[username]
+disabled = true
 
 # ═══════════════════════════════════════════════════════════════════
 # Palettes
@@ -196,58 +168,58 @@ min_time_to_notify = 45000
 
 # Dorje (dark) — Vajrapani's blue-black
 [palettes.sakya_dorje]
-rosewater  = "#E8DCC8"   # Vairochana white — types
-flamingo   = "#C4BCAE"   # Dri-med — secondary text
+rosewater  = "#E8DCC8"   # Vairochana white
+flamingo   = "#C4BCAE"   # Dri-med
 pink       = "#C88090"   # Metok — lotus pink
 mauve      = "#2B3560"   # Tsingkha — indigo
-red        = "#CC3B30"   # Mtshal — cinnabar vermilion
-maroon     = "#BE3A34"   # Amitabha red
-peach      = "#D2B450"   # Gser — 24K gold (directories)
-yellow     = "#A09058"   # Serpo — Ratnasambhava ochre (git)
-green      = "#4A8B5E"   # Ljangkhu — malachite (languages)
+red        = "#CC3B30"   # Mtshal — cinnabar
+maroon     = "#D85A1E"   # Likhri — minium orange (duration)
+peach      = "#D2B450"   # Gser — 24K gold
+yellow     = "#A09058"   # Serpo — Ratnasambhava ochre
+green      = "#4A8B5E"   # Ljangkhu — malachite
 teal       = "#3E7E56"   # Spangma — copper green
 sky        = "#5B8AB8"   # Ngonpo — azurite blue
 sapphire   = "#2E4878"   # Mutsmen — lapis lazuli
-blue       = "#5B8AB8"   # Ngonpo — azurite blue
-lavender   = "#46465C"   # Tsen-kha 2 — surface (time bg)
+blue       = "#5B8AB8"   # Ngonpo
+lavender   = "#46465C"   # Tsen-kha 2
 text       = "#E8E0D4"   # Karpo — primary text
 subtext1   = "#C4BCAE"   # Dri-med
 subtext0   = "#9E978C"   # Dul-ba
-overlay2   = "#7A7A94"   # Overlay 2
-overlay1   = "#686882"   # Overlay 1
-overlay0   = "#565670"   # Overlay 0
-surface2   = "#46465C"   # Tsen-kha 2
-surface1   = "#36364A"   # Tsen-kha 1
-surface0   = "#262638"   # Tsen-kha 0
-base       = "#1B1B2A"   # Sa — main background
-mantle     = "#13131F"   # Drak — sidebar
-crust      = "#0C0C14"   # Shunyata — deepest
+overlay2   = "#7A7A94"
+overlay1   = "#686882"
+overlay0   = "#565670"
+surface2   = "#46465C"
+surface1   = "#36364A"
+surface0   = "#262638"
+base       = "#1B1B2A"   # Sa
+mantle     = "#13131F"   # Drak
+crust      = "#0C0C14"   # Shunyata
 
 # Karpo (light) — Avalokiteshvara's white
 [palettes.sakya_karpo]
-rosewater  = "#6E6650"   # Vairochana — types (darkened)
-flamingo   = "#4C4640"   # Dri-med — secondary text
-pink       = "#A85868"   # Metok — lotus pink
-mauve      = "#222850"   # Tsingkha — indigo
-red        = "#B03028"   # Mtshal — cinnabar
-maroon     = "#A8322E"   # Amitabha red
-peach      = "#A89030"   # Gser — gold (directories)
-yellow     = "#8A7840"   # Serpo — Ratnasambhava ochre (git)
-green      = "#337548"   # Ljangkhu — malachite (languages)
-teal       = "#2A6848"   # Spangma — copper green
-sky        = "#2B5E92"   # Ngonpo — azurite blue
-sapphire   = "#223860"   # Mutsmen — lapis lazuli
-blue       = "#2B5E92"   # Ngonpo — azurite blue
-lavender   = "#D0CEC2"   # Tsen-kha 1 — surface (time bg)
-text       = "#2A2520"   # Karpo — primary text
-subtext1   = "#4C4640"   # Dri-med
-subtext0   = "#706A62"   # Dul-ba
-overlay2   = "#88867C"   # Overlay 2
-overlay1   = "#9A988E"   # Overlay 1
-overlay0   = "#ACAA9E"   # Overlay 0
-surface2   = "#C0BEB2"   # Tsen-kha 2
-surface1   = "#D0CEC2"   # Tsen-kha 1
-surface0   = "#DEDCD0"   # Tsen-kha 0
-base       = "#EAE8DE"   # Sa — main background
-mantle     = "#F2F0E8"   # Drak
-crust      = "#FAFAF6"   # Shunyata — lightest
+rosewater  = "#6E6650"
+flamingo   = "#4C4640"
+pink       = "#A85868"
+mauve      = "#222850"
+red        = "#B03028"
+maroon     = "#B84E18"   # Likhri
+peach      = "#A89030"   # Gser
+yellow     = "#8A7840"
+green      = "#337548"
+teal       = "#2A6848"
+sky        = "#2B5E92"
+sapphire   = "#223860"
+blue       = "#2B5E92"
+lavender   = "#D0CEC2"
+text       = "#2A2520"
+subtext1   = "#4C4640"
+subtext0   = "#706A62"
+overlay2   = "#88867C"
+overlay1   = "#9A988E"
+overlay0   = "#ACAA9E"
+surface2   = "#C0BEB2"
+surface1   = "#D0CEC2"
+surface0   = "#DEDCD0"
+base       = "#EAE8DE"
+mantle     = "#F2F0E8"
+crust      = "#FAFAF6"
