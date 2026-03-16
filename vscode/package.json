@@ -1,0 +1,27 @@
+{
+  "name": "sakya-theme",
+  "displayName": "Sakya Theme",
+  "description": "Color theme inspired by Sakya Monastery thangka paintings and Tibetan Buddhist art",
+  "version": "0.1.0",
+  "publisher": "xuanlee",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Sakya Dorje",
+        "uiTheme": "vs-dark",
+        "path": "./themes/sakya-dorje-color-theme.json"
+      },
+      {
+        "label": "Sakya Karpo",
+        "uiTheme": "vs",
+        "path": "./themes/sakya-karpo-color-theme.json"
+      }
+    ]
+  }
+}
