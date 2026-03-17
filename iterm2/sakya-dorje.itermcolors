@@ -16,35 +16,38 @@
 		<key>Red Component</key>
 		<real>0.047059</real>
 	</dict>
-	<!-- Ansi 1 Color: #CC3B30 (Mtshal) -->
+
+	<!-- Ansi 1 Color: #BB4441 (Mtshal/朱砂 calibrated) -->
 	<key>Ansi 1 Color</key>
 	<dict>
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>0.188235</real>
+		<real>0.254902</real>
 		<key>Color Space</key>
 		<string>sRGB</string>
 		<key>Green Component</key>
-		<real>0.231373</real>
+		<real>0.266667</real>
 		<key>Red Component</key>
-		<real>0.800000</real>
+		<real>0.733333</real>
 	</dict>
-	<!-- Ansi 2 Color: #4A8B5E (Ljangkhu) -->
+
+	<!-- Ansi 2 Color: #527559 (Ljangkhu/孔雀石 calibrated) -->
 	<key>Ansi 2 Color</key>
 	<dict>
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>0.368627</real>
+		<real>0.349020</real>
 		<key>Color Space</key>
 		<string>sRGB</string>
 		<key>Green Component</key>
-		<real>0.545098</real>
+		<real>0.458824</real>
 		<key>Red Component</key>
-		<real>0.290196</real>
+		<real>0.321569</real>
 	</dict>
-	<!-- Ansi 3 Color: #D2B450 (Gser) -->
+
+	<!-- Ansi 3 Color: #D2B450 (Gser/金) -->
 	<key>Ansi 3 Color</key>
 	<dict>
 		<key>Alpha Component</key>
@@ -58,7 +61,8 @@
 		<key>Red Component</key>
 		<real>0.823529</real>
 	</dict>
-	<!-- Ansi 4 Color: #5B8AB8 (Ngonpo) -->
+
+	<!-- Ansi 4 Color: #5B8AB8 (Ngonpo/石青蓝) -->
 	<key>Ansi 4 Color</key>
 	<dict>
 		<key>Alpha Component</key>
@@ -72,7 +76,8 @@
 		<key>Red Component</key>
 		<real>0.356863</real>
 	</dict>
-	<!-- Ansi 5 Color: #C88090 (Metok) -->
+
+	<!-- Ansi 5 Color: #C88090 (Metok/莲花粉) -->
 	<key>Ansi 5 Color</key>
 	<dict>
 		<key>Alpha Component</key>
@@ -86,21 +91,23 @@
 		<key>Red Component</key>
 		<real>0.784314</real>
 	</dict>
-	<!-- Ansi 6 Color: #3E7E56 (Spangma) -->
+
+	<!-- Ansi 6 Color: #527559 (Spangma/石绿) -->
 	<key>Ansi 6 Color</key>
 	<dict>
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>0.337255</real>
+		<real>0.349020</real>
 		<key>Color Space</key>
 		<string>sRGB</string>
 		<key>Green Component</key>
-		<real>0.494118</real>
+		<real>0.458824</real>
 		<key>Red Component</key>
-		<real>0.243137</real>
+		<real>0.321569</real>
 	</dict>
-	<!-- Ansi 7 Color: #C4BCAE (Dri-med) -->
+
+	<!-- Ansi 7 Color: #C4BCAE (Dri-med/副文字) -->
 	<key>Ansi 7 Color</key>
 	<dict>
 		<key>Alpha Component</key>
@@ -114,6 +121,7 @@
 		<key>Red Component</key>
 		<real>0.768627</real>
 	</dict>
+
 	<!-- Ansi 8 Color: #46465C (Tsen-kha 2) -->
 	<key>Ansi 8 Color</key>
 	<dict>
@@ -128,49 +136,53 @@
 		<key>Red Component</key>
 		<real>0.274510</real>
 	</dict>
-	<!-- Ansi 9 Color: #BE3A34 (Amitabha) -->
+
+	<!-- Ansi 9 Color: #BB4441 -->
 	<key>Ansi 9 Color</key>
 	<dict>
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>0.203922</real>
+		<real>0.254902</real>
 		<key>Color Space</key>
 		<string>sRGB</string>
 		<key>Green Component</key>
-		<real>0.227451</real>
+		<real>0.266667</real>
 		<key>Red Component</key>
-		<real>0.745098</real>
+		<real>0.733333</real>
 	</dict>
-	<!-- Ansi 10 Color: #4A8B5E (Ljangkhu) -->
+
+	<!-- Ansi 10 Color: #527559 -->
 	<key>Ansi 10 Color</key>
 	<dict>
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>0.368627</real>
+		<real>0.349020</real>
 		<key>Color Space</key>
 		<string>sRGB</string>
 		<key>Green Component</key>
-		<real>0.545098</real>
+		<real>0.458824</real>
 		<key>Red Component</key>
-		<real>0.290196</real>
+		<real>0.321569</real>
 	</dict>
-	<!-- Ansi 11 Color: #D2B450 (Gser) -->
+
+	<!-- Ansi 11 Color: #E0C888 (Nyima/日光) -->
 	<key>Ansi 11 Color</key>
 	<dict>
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>0.313725</real>
+		<real>0.533333</real>
 		<key>Color Space</key>
 		<string>sRGB</string>
 		<key>Green Component</key>
-		<real>0.705882</real>
+		<real>0.784314</real>
 		<key>Red Component</key>
-		<real>0.823529</real>
+		<real>0.878431</real>
 	</dict>
-	<!-- Ansi 12 Color: #5B8AB8 (Ngonpo) -->
+
+	<!-- Ansi 12 Color: #5B8AB8 -->
 	<key>Ansi 12 Color</key>
 	<dict>
 		<key>Alpha Component</key>
@@ -184,7 +196,8 @@
 		<key>Red Component</key>
 		<real>0.356863</real>
 	</dict>
-	<!-- Ansi 13 Color: #C88090 (Metok) -->
+
+	<!-- Ansi 13 Color: #C88090 -->
 	<key>Ansi 13 Color</key>
 	<dict>
 		<key>Alpha Component</key>
@@ -198,21 +211,23 @@
 		<key>Red Component</key>
 		<real>0.784314</real>
 	</dict>
-	<!-- Ansi 14 Color: #3E7E56 (Spangma) -->
+
+	<!-- Ansi 14 Color: #527559 -->
 	<key>Ansi 14 Color</key>
 	<dict>
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>0.337255</real>
+		<real>0.349020</real>
 		<key>Color Space</key>
 		<string>sRGB</string>
 		<key>Green Component</key>
-		<real>0.494118</real>
+		<real>0.458824</real>
 		<key>Red Component</key>
-		<real>0.243137</real>
+		<real>0.321569</real>
 	</dict>
-	<!-- Ansi 15 Color: #E8E0D4 (Karpo) -->
+
+	<!-- Ansi 15 Color: #E8E0D4 (Karpo/fg-primary) -->
 	<key>Ansi 15 Color</key>
 	<dict>
 		<key>Alpha Component</key>
@@ -226,7 +241,8 @@
 		<key>Red Component</key>
 		<real>0.909804</real>
 	</dict>
-	<!-- Background Color: #1B1B2A (Sa) -->
+
+	<!-- Background Color: #1B1B2A (Sa/bg-base) -->
 	<key>Background Color</key>
 	<dict>
 		<key>Alpha Component</key>
@@ -240,34 +256,37 @@
 		<key>Red Component</key>
 		<real>0.105882</real>
 	</dict>
-	<!-- Badge Color: #CC3B30 (Mtshal) -->
+
+	<!-- Badge Color: #BB4441 (Mtshal/朱砂) -->
 	<key>Badge Color</key>
 	<dict>
 		<key>Alpha Component</key>
-		<real>0.5</real>
+		<real>1</real>
 		<key>Blue Component</key>
-		<real>0.188235</real>
+		<real>0.254902</real>
 		<key>Color Space</key>
 		<string>sRGB</string>
 		<key>Green Component</key>
-		<real>0.231373</real>
+		<real>0.266667</real>
 		<key>Red Component</key>
-		<real>0.800000</real>
+		<real>0.733333</real>
 	</dict>
-	<!-- Bold Color: #E8DCC8 (Vairochana) -->
+
+	<!-- Bold Color: #EFE2BE (p-karpo/铅白) -->
 	<key>Bold Color</key>
 	<dict>
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>0.784314</real>
+		<real>0.745098</real>
 		<key>Color Space</key>
 		<string>sRGB</string>
 		<key>Green Component</key>
-		<real>0.862745</real>
+		<real>0.886275</real>
 		<key>Red Component</key>
-		<real>0.909804</real>
+		<real>0.937255</real>
 	</dict>
+
 	<!-- Cursor Color: #D2B450 (Gser/Gold) -->
 	<key>Cursor Color</key>
 	<dict>
@@ -282,7 +301,8 @@
 		<key>Red Component</key>
 		<real>0.823529</real>
 	</dict>
-	<!-- Cursor Text Color: #1B1B2A (Sa) -->
+
+	<!-- Cursor Text Color: #1B1B2A -->
 	<key>Cursor Text Color</key>
 	<dict>
 		<key>Alpha Component</key>
@@ -296,7 +316,8 @@
 		<key>Red Component</key>
 		<real>0.105882</real>
 	</dict>
-	<!-- Foreground Color: #E8E0D4 (Karpo) -->
+
+	<!-- Foreground Color: #E8E0D4 (Karpo/fg-primary) -->
 	<key>Foreground Color</key>
 	<dict>
 		<key>Alpha Component</key>
@@ -310,7 +331,8 @@
 		<key>Red Component</key>
 		<real>0.909804</real>
 	</dict>
-	<!-- Selected Text Color: #E8E0D4 (Karpo) -->
+
+	<!-- Selected Text Color: #E8E0D4 -->
 	<key>Selected Text Color</key>
 	<dict>
 		<key>Alpha Component</key>
@@ -324,19 +346,20 @@
 		<key>Red Component</key>
 		<real>0.909804</real>
 	</dict>
-	<!-- Selection Color: #3D3A30 (Nyima ~30% opacity approximation) -->
+
+	<!-- Selection Color: #36364A (bg-surface1) -->
 	<key>Selection Color</key>
 	<dict>
 		<key>Alpha Component</key>
 		<real>1</real>
 		<key>Blue Component</key>
-		<real>0.188235</real>
+		<real>0.290196</real>
 		<key>Color Space</key>
 		<string>sRGB</string>
 		<key>Green Component</key>
-		<real>0.227451</real>
+		<real>0.211765</real>
 		<key>Red Component</key>
-		<real>0.239216</real>
+		<real>0.211765</real>
 	</dict>
 </dict>
 </plist>

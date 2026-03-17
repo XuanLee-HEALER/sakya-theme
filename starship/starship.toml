@@ -166,20 +166,20 @@ disabled = true
 # Palettes
 # ═══════════════════════════════════════════════════════════════════
 
-# Dorje (dark) — Vajrapani's blue-black
+# Dorje (dark) — Vajrapani's blue-black — calibrated with Munsell data
 [palettes.sakya_dorje]
-rosewater  = "#E8DCC8"   # Vairochana white
+rosewater  = "#EFE2BE"   # Karpo/铅白 (calibrated 3.75Y 9/2.5)
 flamingo   = "#C4BCAE"   # Dri-med
 pink       = "#C88090"   # Metok — lotus pink
 mauve      = "#2B3560"   # Tsingkha — indigo
-red        = "#CC3B30"   # Mtshal — cinnabar
-maroon     = "#D85A1E"   # Likhri — minium orange (duration)
+red        = "#BB4441"   # Mtshal — cinnabar (calibrated 6.25R 4.5/11)
+maroon     = "#E85600"   # Likhri — minium (calibrated 0.5YR 5.5/15.5)
 peach      = "#D2B450"   # Gser — 24K gold
 yellow     = "#A09058"   # Serpo — Ratnasambhava ochre
-green      = "#4A8B5E"   # Ljangkhu — malachite
-teal       = "#3E7E56"   # Spangma — copper green
+green      = "#527559"   # Ljangkhu — malachite (calibrated 1.5G 4.5/3.7)
+teal       = "#527559"   # Spangma — copper green (same mineral)
 sky        = "#5B8AB8"   # Ngonpo — azurite blue
-sapphire   = "#2E4878"   # Mutsmen — lapis lazuli
+sapphire   = "#2F3B5B"   # Mutsmen — lapis lazuli (calibrated 6.25PB 2.5/4.5)
 blue       = "#5B8AB8"   # Ngonpo
 lavender   = "#46465C"   # Tsen-kha 2
 text       = "#E8E0D4"   # Karpo — primary text
@@ -194,32 +194,3 @@ surface0   = "#262638"
 base       = "#1B1B2A"   # Sa
 mantle     = "#13131F"   # Drak
 crust      = "#0C0C14"   # Shunyata
-
-# Karpo (light) — Avalokiteshvara's white
-[palettes.sakya_karpo]
-rosewater  = "#6E6650"
-flamingo   = "#4C4640"
-pink       = "#A85868"
-mauve      = "#222850"
-red        = "#B03028"
-maroon     = "#B84E18"   # Likhri
-peach      = "#A89030"   # Gser
-yellow     = "#8A7840"
-green      = "#337548"
-teal       = "#2A6848"
-sky        = "#2B5E92"
-sapphire   = "#223860"
-blue       = "#2B5E92"
-lavender   = "#D0CEC2"
-text       = "#2A2520"
-subtext1   = "#4C4640"
-subtext0   = "#706A62"
-overlay2   = "#88867C"
-overlay1   = "#9A988E"
-overlay0   = "#ACAA9E"
-surface2   = "#C0BEB2"
-surface1   = "#D0CEC2"
-surface0   = "#DEDCD0"
-base       = "#EAE8DE"
-mantle     = "#F2F0E8"
-crust      = "#FAFAF6"
