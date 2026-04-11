@@ -43,6 +43,27 @@ Ctrl+Shift+P → Extensions: Install from VSIX...
 
 Select **Sakya Dorje** from Color Theme.
 
+### Neovim
+
+Using [lazy.nvim](https://github.com/folke/lazy.nvim):
+
+```lua
+{
+  "XuanLee-HEALER/sakya-theme",
+  config = function()
+    vim.cmd.colorscheme("sakya-dorje")
+  end,
+}
+```
+
+Or manually copy `nvim/colors/` and `nvim/lua/` into your Neovim config directory (`~/.config/nvim/`), then:
+
+```vim
+colorscheme sakya-dorje
+```
+
+Supports TreeSitter, LSP semantic tokens, Telescope, Lazy.nvim, GitSigns, indent-blankline, which-key, NeoTree/NvimTree.
+
 ### iTerm2
 
 1. iTerm2 → Preferences → Profiles → Colors
