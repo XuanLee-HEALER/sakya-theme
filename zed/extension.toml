@@ -1,0 +1,7 @@
+id = "sakya"
+name = "Sakya"
+description = "A color theme inspired by Sakya Monastery thangka paintings and Tibetan Buddhist color symbolism."
+version = "0.1.0"
+schema_version = 1
+authors = ["Sakya Theme"]
+repository = "https://github.com/sakya-theme/sakya"
